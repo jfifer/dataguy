@@ -4,7 +4,7 @@
 <?php
 $conn = new mysqli($HOST,$DBUSER,$DBPWD,$DBNAME);
 
-$sql='call getCustomerEndUserBilling('.$customerId.');';
+$sql='call getCustomerEndUserBilling('.$customerId.', 2017);';
 
 if ( $result=mysqli_query($conn,$sql) ) {
 

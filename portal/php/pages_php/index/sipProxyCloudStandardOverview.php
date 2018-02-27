@@ -2,17 +2,17 @@
 
 $conn = new mysqli($HOST,$DBUSER,$DBPWD,$DBNAME);
 
-$sql='call getOverallExtensionCounts()';
+$sql='call getOverallExtensionCounts(2017)';
 
 if ( $result=mysqli_query($conn,$sql) ) {
 
    while ( $row=mysqli_fetch_array($result) ) {
 
      $extData[] = array(
-                  "year" => $row["2017"],
-                  "standard" => $row["v_std2017"],
-                  "cloud" => $row["v_cloud2017"],
-                  "sip" => $row["v_sip2017"]
+                  "year" => $row["Previous"],
+                  "standard" => $row["v_stdPrev"],
+                  "cloud" => $row["v_cloudPrev"],
+                  "sip" => $row["v_sipPrev"]
                 );
     }
 

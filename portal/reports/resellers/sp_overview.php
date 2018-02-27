@@ -159,7 +159,7 @@ if ( $result=mysqli_query($conn,$sql1) ) {
 $conn = new mysqli($HOST,$DBUSER,$DBPWD,$DBNAME);
 
 
-$sql2='call getCustomerGrowthREPORT('.$resellerId.');';
+$sql2='call getCustomerGrowthREPORT('.$resellerId.', 2017);';
 
 if ( $result=mysqli_query($conn,$sql2) ) {
 
