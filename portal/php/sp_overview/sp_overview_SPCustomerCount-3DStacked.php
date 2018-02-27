@@ -4,7 +4,7 @@
 <?php
 $conn = new mysqli($HOST,$DBUSER,$DBPWD,$DBNAME);
 $year = date("Y");
-$sql='call getCustomerGrowthCount('.$resellerId.', '.$year.');';
+$sql='call getCustomerGrowthCount('.$resellerId.', '.($year-1).');';
 
 if ( $result=mysqli_query($conn,$sql) ) {
 

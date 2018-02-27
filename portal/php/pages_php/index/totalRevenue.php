@@ -1,8 +1,8 @@
 <?php require_once("php/dbconn.php");
 
 $conn = new mysqli($HOST,$DBUSER,$DBPWD,$DBNAME);
-
-$sql='call getAnuallRev()';
+$year = date("Y");
+$sql="call getAnnualRev(2016)";
 
 //$sql='call getAnuallEndUserBilling_ByMonth()'; PHASE 2
 
@@ -59,7 +59,7 @@ mysqli_close($conn);
                 // first graph
                 var graph1 = new AmCharts.AmGraph();
                 graph1.type = "column";
-                graph1.title = "2016 End User Billing";
+                graph1.title = "2017 End User Billing";
                 graph1.valueField = "value";
                 graph1.balloonText = "Billed:[[value]]";
                 graph1.lineAlpha = 0;

@@ -193,7 +193,7 @@ echo "
               </div>";
 
 
-       echo "<a href='customer_base_overview_2014.php?resellerId=".$resellerId."'>".
+       echo "<a href='../../customer_base_overview_2017.php?resellerId=".$resellerId."'>".
              "<div class='panel-footer'>".
                       "<span class='pull-left'>View Details</span>".
                       "<span class='pull-right'><i class='fa fa-arrow-circle-right'></i></span>".
@@ -216,7 +216,7 @@ echo "
                       </div>
                   </div>
               </div>
-              <a href='customer_base_overview_2015.php?resellerId=".$resellerId."'>".
+              <a href='../../customer_base_overview_2018.php?resellerId=".$resellerId."'>".
                   "<div class='panel-footer'>
                       <span class='pull-left'>View Details</span>
                       <span class='pull-right'><i class='fa fa-arrow-circle-right'></i></span>
@@ -240,7 +240,7 @@ echo "
                       </div>
                   </div>
               </div>
-              <a href='cancellation_overview_2014.php?resellerId=".$resellerId."'>".
+              <a href='../../cancellation_overview_2017.php?resellerId=".$resellerId."'>".
                   "<div class='panel-footer'>
                       <span class='pull-left'>View Details</span>
                       <span class='pull-right'><i class='fa fa-arrow-circle-right'></i></span>
@@ -265,7 +265,7 @@ echo "
                       </div>
                   </div>
               </div>
-              <a href='cancellation_overview_2015.php?resellerId=".$resellerId."'>".
+              <a href='../../cancellation_overview_2018.php?resellerId=".$resellerId."'>".
                   "<div class='panel-footer'>
                       <span class='pull-left'>View Details</span>
                       <span class='pull-right'><i class='fa fa-arrow-circle-right'></i></span>
