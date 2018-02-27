@@ -3,8 +3,8 @@
 
 <?php
 $conn = new mysqli($HOST,$DBUSER,$DBPWD,$DBNAME);
-
-$sql='call getCustomerGrowthCount('.$resellerId.');';
+$year = date("Y");
+$sql='call getCustomerGrowthCount('.$resellerId.', '.$year.');';
 
 if ( $result=mysqli_query($conn,$sql) ) {
 

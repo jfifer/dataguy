@@ -113,7 +113,7 @@ if ( $result=mysqli_query($conn,$sql) ) {
   <div class="row">
     <!--<div class="col-md-6 portfolio-item">
       <label>UpTime<small> <a href="reports/infrastructure/incidents.php">See Incidents Here</a></small></label>
-        <?php require_once('php/pages_php/index/upTime.php'); ?>
+        <?php //require_once('php/pages_php/index/upTime.php'); ?>
     -->
     </div>
     <div class="col-md-6 portfolio-item">
@@ -131,11 +131,11 @@ if ( $result=mysqli_query($conn,$sql) ) {
   <div class="row">
     <div class="col-md-6 portfolio-item">
       <label>Annual End User Billing<small> </small></label>
-        <?php require_once('php/pages_php/index/totalRevenue.php'); ?>
+        <?php //require_once('php/pages_php/index/totalRevenue.php'); ?>
     </div>
     <div class="col-md-6 portfolio-item">
       <label>Standard, Cloud & Sip Extensions<small> Overall</small></label>
-        <?php require_once('php/pages_php/index/sipProxyCloudStandardOverview.php'); ?>
+        <?php //require_once('php/pages_php/index/sipProxyCloudStandardOverview.php'); ?>
     </div>
   </div> -->
 

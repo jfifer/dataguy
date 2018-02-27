@@ -1,11 +1,12 @@
 <?php
 $conn = new mysqli($HOST,$DBUSER,$DBPWD,$DBNAME);
-// CALL getOverAllCustomerGrowthREPORT();
+$init = "CALL getOverAllCustomerGrowthREPORT(2018);";
+mysqli_query($conn, $init);
 
-$getCounts='SELECT CustomerTotal2017,
+$getCounts='SELECT CustomerTotalPrev,
                    CustomerTotal,
-                   Cancellations2017,
-                   Cancellations2018
+                   CancellationsPrev,
+                   Cancellations
               FROM customer_growth';
 
 if ( $result=mysqli_query($conn,$getCounts) ) {
