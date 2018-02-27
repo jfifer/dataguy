@@ -1,0 +1,42 @@
+  .logo {
+  	margin-top: 10px;
+  	margin-left: 20px;
+  	float: left;
+  }
+
+  .container-fluid {
+  	background-color: #0076a3;
+  }
+
+  .navvy {
+  	color: #FFF !important;
+  }
+
+  .active {
+  	background-color: #FFF !important;
+  }
+
+  /*.page-header {
+    font-family: 'Play', sans-serif;
+  }*/
+
+  body {
+    font-family: 'Play', sans-serif;
+  }
+
+  .modal.in {
+   display:block;
+  }
+
+  .todayDate {
+        color:black;
+        float: right;
+
+  }
+
+  .logo_login {
+  top:0;
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+}

@@ -1,0 +1,126 @@
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var std_data = google.visualization.arrayToDataTable([
+          ['Month', "2015", "2016", "2017"],
+          ["Jan", 3930, 3223, 3256],
+          ["Feb", 3223, 5344, 0],
+          ["Mar", 3456, 6221, 0],
+          ["Apr", 4331, 4784, 0],
+          ["May", 3774, 4607, 0],
+          ["Jun", 4926, 5222, 0],
+          ["Jul", 4629, 4858, 0],
+          ["Aug", 3690, 4449, 0],
+          ["Sep", 3334, 4154, 0],
+          ["Oct", 4550, 3971, 0],
+          ["Nov", 4589, 4334, 0],
+          ["Dec", 3948, 4238, 0]
+        ]);
+
+        var cloud_data = google.visualization.arrayToDataTable([
+          ['Month', "2015", "2016", "2017"],
+          ["Jan", 285, 299, 228],
+          ["Feb", 240, 429, 0],
+          ["Mar", 223, 677, 0],
+          ["Apr", 1794, 430, 0],
+          ["May", 439, 288, 0],
+          ["Jun", 630, 526, 0],
+          ["Jul", 237, 439, 0],
+          ["Aug", 393, 640, 0],
+          ["Sep", 327, 341, 0],
+          ["Oct", 320, 383, 0],
+          ["Nov", 518, 316, 0],
+          ["Dec", 413, 286, 0]
+        ]);
+
+        var sip_data = google.visualization.arrayToDataTable([
+          ['Month', "2015", "2016", "2017"],
+          ["Jan", 59, 88, 88],
+          ["Feb", 67, 95, 0],
+          ["Mar", 68, 84, 0],
+          ["Apr", 86, 88, 0],
+          ["May", 87, 108, 0],
+          ["Jun", 108, 115, 0],
+          ["Jul", 114, 79, 0],
+          ["Aug", 106, 115, 0],
+          ["Sep", 105, 73, 0],
+          ["Oct", 91, 89, 0],
+          ["Nov", 88, 87, 0],
+          ["Dec", 108, 114, 0]
+        ]);
+
+        var total_data = google.visualization.arrayToDataTable([
+          ['Month', "2015", "2016", "2017"],
+          ["Jan", 4274, 3610, 3572],
+          ["Feb", 3530, 5868, 0],
+          ["Mar", 3764, 6982, 0],
+          ["Apr", 6210, 5302, 0],
+          ["May", 4300, 5003, 0],
+          ["Jun", 5664, 5863, 0],
+          ["Jul", 4980, 5376, 0],
+          ["Aug", 4189, 5204, 0],
+          ["Sep", 3766, 4568, 0],
+          ["Oct", 4961, 4443, 0],
+          ["Nov", 5195, 4737, 0],
+          ["Dec", 4469, 4638, 0]
+        ]);
+
+
+        var options = {
+          title: 'Standard Extensions',
+          curveType: null,
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(std_data, options);
+
+        var cloud_options = {
+          title: 'Cloud Extensions',
+          curveType: null,
+          legend: { position: 'bottom' }
+        };
+
+        var cloud_chart = new google.visualization.LineChart(document.getElementById('cloud_curve_chart'));
+
+        cloud_chart.draw(cloud_data, cloud_options);
+
+        var sip_options = {
+          title: 'SIP Trunks',
+          curveType: null,
+          legend: { position: 'bottom' }
+        };
+
+        var sip_chart = new google.visualization.LineChart(document.getElementById('sip_curve_chart'));
+
+        sip_chart.draw(sip_data, sip_options);
+
+        var total_options = {
+          title: 'Total Added',
+          curveType: null,
+          legend: { position: 'bottom' }
+        };
+
+        var total_chart = new google.visualization.LineChart(document.getElementById('total_curve_chart'));
+
+        total_chart.draw(total_data, total_options);
+
+
+      }
+    </script>
+  </head>
+  <body>
+    <div id="total_curve_chart" style="width: 900px; height: 500px;"></div>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+    <div id="cloud_curve_chart" style="width: 900px; height: 500px"></div>
+    <div id="sip_curve_chart" style="width: 900px; height: 500px"></div>
+  </body>
+</html>
+
