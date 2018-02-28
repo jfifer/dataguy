@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <link rel="shortcut icon" href="http://d15dxvojnvxp1x.cloudfront.net/assets/favicon.ico">
+  <link rel="icon" href="http://d15dxvojnvxp1x.cloudfront.net/assets/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.1.2/css/buttons.bootstrap.min.css">
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.1.2/js/dataTables.buttons.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.1.2/js/buttons.bootstrap.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+  <script type="text/javascript" src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+  <script type="text/javascript" src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+  <script type="text/javascript" src="//cdn.datatables.net/buttons/1.1.2/js/buttons.html5.min.js"></script>
+  <script type="text/javascript" src="//cdn.datatables.net/buttons/1.1.2/js/buttons.print.min.js"></script>
+  <script type="text/javascript" src="//cdn.datatables.net/buttons/1.1.2/js/buttons.colVis.min.js"></script>
+
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+  <script type="text/javascript" src="js/ajax1.js"></script>
+
+
+
+</head>
+
+
+<body>
+<form class="form-inline">
+    <div class="input-group">
+        <div>Enter Person Name</div>
+        <input class="form-control" id="tags">
+    </div>
+    <div class="btn-group">
+        <button type="submit" id="btnSubmit">Search</button>
+    </div>
+</form>
+
+<br><br><br>
+
+<div class="dataTable_wrapper">
+    <table class='table table-striped table-bordered table-hover' id='records_table'>
+        <tr class='odd gradeX'>
+            <th>Name</th>
+            <th>Group</th>
+            <th>Work</th>
+            <th>Grade1</th>
+            <th>Grade2</th>
+            <th>Grade3</th>
+            <th>TeacherName</th>
+            <th>RollNo</th>
+        </tr>
+    </table>
+</div>
+
+</body>
+
+</html>

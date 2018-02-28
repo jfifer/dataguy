@@ -2,6 +2,5 @@
 *.zip
 bi*
 bjornd
-testStuff
 tmp.sql
 .idea
