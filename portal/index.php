@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<?php
+require_once("php/pages_php/index/session.php");
+?>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CoreDial, LLC. Data Intel</title>
